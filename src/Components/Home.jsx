@@ -24,7 +24,16 @@ function Home() {
         </div>
         <img src={profile} alt="profile pic" className={styles.profilePic} />
       </div>
+      <div className={styles.homeLeft}>
+        <div className={styles.titulo}>Hola! Soy Jheinember Jimenez</div>
+        <div className={styles.subtitulo}>Full Stack Developer</div>
+        <div className={styles.descripcion}>
+          Full Stack Developer con formación universitaria, resolución de problemas, trabajo en equipo,
+          comunicación y autonomía.
+        </div>
+      </div>
     </div>
+
   );
 }
 
