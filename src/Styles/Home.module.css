@@ -1,191 +1,116 @@
-.contAbout {
+.homeContenedor {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
-
-.contenidoSobreMi {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 2rem;
-  border-radius: 30px;
-  width: 100%;
-}
-
-.titleAbout {
-  font-size: clamp(1.7rem, 2.3vw, 2.8rem);
-  color: #c287e5;
-  font-weight: 650;
-  border-bottom: 3px solid #f6cbce;
-}
-
-.subTitle {
-  font-size: clamp(1.2rem, 1.8vw, 2.3rem);
-  color: #caa3e1;
-  font-weight: 600;
-  margin-bottom: 3rem;
-}
-
-.contenidoEducación {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.educación {
-  display: flex;
-  gap: 1rem;
-}
-
-.icon {
-  background-color: #caa3e1;
-  color: #fff;
-  border-radius: 50px;
-  font-size: 50px;
-  padding: 0.7rem;
-}
-
-.edTitle {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.institucion {
-  font-weight: 500;
-}
-
-.fecha {
-  background-color: #f6cbce;
-  width: fit-content;
-  padding-inline: 1rem;
-  border-radius: 20px;
-  color: #fff;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.aboutRight {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
+}
+
+.profilePic {
+  width: 100%;
+  border-radius: 10rem 10rem 2rem 2rem;
+}
+
+.imageBorder {
+  border-radius: 12rem 12rem 2rem 2rem;
+  background-color: #fcf3e1;
+  padding: 0.8rem;
+  width: 80%;
   position: relative;
-  background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding-inline: 0.3;
-  padding-block: 2rem;
-  border-radius: 30px;
+  max-width: 350px;
 }
 
-.skills {
+.circuloLinkedin {
+  position: absolute;
+  right: -1rem;
+  bottom: 2rem;
+  background-color: #d7abd2;
+  color: #fcf3e1;
+  font-size: 2rem;
+  border-radius: 3rem;
+  padding: 0.2rem;
+  height: 3rem;
+  width: 3rem;
   display: flex;
   justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
-  color: #fff;
-  font-weight: 500;
-  margin: auto;
+  cursor: pointer;
+  box-shadow: hsl(281, 39%, 71%) 0px 4px 12px;
+  transition: all 0.25s ease-in-out;
 }
 
-.skillsItem {
-  background-color: #caa3e1;
+.circuloGithub {
+  position: absolute;
+  right: -1rem;
+  bottom: 6rem;
+  background-color: #d7abd2;
+  color: #fcf3e1;
+  font-size: 2rem;
+  border-radius: 3rem;
+  padding: 0.3rem;
+  height: 3rem;
+  width: 3rem;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem;
-  padding-inline: 1rem;
-  border-radius: 50px;
-  margin: 0.5rem;
-  cursor: default;
-  width: fit-content;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: hsl(281, 39%, 71%) 0px 4px 12px;
+  transition: all 0.25s ease-in-out;
 }
 
-.skillsItem:hover {
-  background-color: #f6cbce;
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0px 10px #f6cbce;
-  transition: all 0.2s ease;
+.homeLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
 }
-.skillsIcon {
-  font-size: 22px;
+
+.titulo {
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  font-weight: 700;
+  color: hsl(281, 28%, 55%);
+}
+
+.subtitulo {
+  font-size: clamp(1.25rem, 2.2vw, 2.5rem);
+  color: hsl(261, 15%, 45%);
+  font-weight: 550;
+  margin-bottom: 0.75rem;
+}
+
+.descripcion {
+  font-size: clamp(1rem, 1.4vw, 2rem);
 }
 
 @media (min-width: 583px) {
-  .contAbout {
-    margin-top: 3rem;
-    padding-inline: 5rem;
+  .homeContenedor {
+    justify-content: flex-start;
+    padding-inline: 7rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
-  .contenidoSobreMi {
-    gap: 5rem;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+  .circuloGithub {
+    font-size: 3rem;
+    height: 4rem;
+    width: 4rem;
+    right: 25.25%;
+    bottom: -1.3rem;
+    transition: all 0.25s ease-in-out;
   }
 
-  .aboutLeft {
-    width: 45%;
-    padding: 2rem;
-    border-radius: 30px;
-    min-height: 36rem;
+  .circuloLinkedin {
+    font-size: 2.7rem;
+    height: 4rem;
+    width: 4rem;
+    right: 55%;
+    bottom: -1.3rem;
+    transition: all 0.25s ease-in-out;
   }
 
-  .aboutRight {
-    width: 45%;
-    padding: 2rem;
-    border-radius: 30px;
-    min-height: 36rem;
+  .homeLeft {
+    padding-inline: 2rem;
   }
 
-  .titleAbout {
-    margin-bottom: 1.5rem;
-    font-size: clamp(2rem, calc(1.7rem + 1.2vw), 2.5rem);
-  }
-
-  .subTitle {
-    font-size: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
-  }
-
-  .contenidoEducación {
-    gap: 6rem;
-  }
-
-  .edTitle {
-    font-size: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
-    font-weight: 700;
-  }
-
-  .institucion {
-    font-size: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem);
-  }
-
-  .fecha {
-    font-size: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.56rem);
-    margin-top: 0.5rem;
-  }
-
-  .icon {
-    font-size: 65px;
-  }
-
-  .skillsItem {
-    font-size: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem);
-  }
-
-  .skillsIcon {
-    font-size: 30px;
+  .subtitulo {
+    font-weight: 600;
   }
 }
