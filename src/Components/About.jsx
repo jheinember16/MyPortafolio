@@ -16,7 +16,7 @@ import { BiChevronDown } from "react-icons/bi";
 
 function About() {
 
-  const [menuIsOpen, setMenuIsOpen] = useState(true)
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
 
   const handleClick = (e) => {
     setMenuIsOpen(!menuIsOpen);
@@ -28,8 +28,7 @@ function About() {
       <div className={styles.infoAbout}>
         <div className={styles.aboutLeft}>
           Estoy pronto por finalizar el bootcamp Soy Henry, donde me formé para
-          ser full stack web developer. Además soy Diseñadora Gráfica, y trabajé
-          como freelance durante 5 años.
+          ser full stack web developer. 
         </div>
 
         <div className={styles.aboutRight}>
@@ -88,13 +87,6 @@ function About() {
               <SiFigma className={styles.skillsIcon} /> Figma
             </li>
 
-            <li className={styles.skillsItem}>
-              <DiPhotoshop className={styles.skillsIcon} /> Photoshop
-            </li>
-
-            <li className={styles.skillsItem}>
-              <DiIllustrator className={styles.skillsIcon} /> Illustrator
-            </li>
           </ul>
         </div>
     </div>
