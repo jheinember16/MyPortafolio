@@ -6,8 +6,8 @@ import About from "./Components/About"
 function App() {
   return (
     <>
-      <Home></Home>
       <Nav></Nav>
+      <Home></Home>
       <About></About>
     </>
   );
