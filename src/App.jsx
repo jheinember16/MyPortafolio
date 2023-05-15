@@ -9,8 +9,13 @@ function App() {
     <>
       <Nav></Nav>
       <div className={styles.cont}>
-      <Home></Home>
-      <About></About>
+      <section id="Home">
+          <Home></Home>
+        </section>
+
+        <section id="SobreMi">
+          <About></About>
+        </section>
       </div>
     </>
   );

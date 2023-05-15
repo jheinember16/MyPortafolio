@@ -22,32 +22,22 @@ function Nav() {
       }`}
     >
       <ul className={`${styles.navLista} ${!menuIsOpen && styles.closeMenu}`}>
-        <li className={styles.navItem}>
+        <a href="#Home" className={styles.navItem}>
           <BiHomeAlt className={styles.navIcono} /> Home
-        </li>
-
-        <li className={styles.navItem}>
-          <BiUser className={styles.navIcono} /> About Me
-        </li>
-
-        <li className={styles.navItem}>
-          <BiCode className={styles.navIcono} /> Projects
-        </li>
-
-        <li className={styles.navItem}>
-          <BiSend className={styles.navIcono} /> Contact Me
-        </li>
-      </ul>
-
-      {/* <div className={styles.navName}>
-        <a
-          href="https://www.linkedin.com/in/lourdeslopezpepa/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Lourdes
         </a>
-      </div> */}
+
+        <a href="#SobreMi" className={styles.navItem}>
+          <BiUser className={styles.navIcono} /> Sobre Mi
+        </a>
+
+        <a href="#Proyectos" className={styles.navItem}>
+          <BiCode className={styles.navIcono} /> Proyectos
+        </a>
+
+        <a href="#Contacto" className={styles.navItem}>
+          <BiSend className={styles.navIcono} /> Contacto
+        </a>
+      </ul>
 
       <button
         className={`${styles.buttonClose} ${
