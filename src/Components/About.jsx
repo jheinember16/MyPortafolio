@@ -24,11 +24,11 @@ function About() {
 
   return (
     <div className={styles.contAbout}>
-      <div className={styles.titleAbout}>About Me</div>
+      <div className={styles.titleAbout}>Sobre Mi </div>
       <div className={styles.infoAbout}>
-        <div className={styles.aboutLeft}>
-          Estoy pronto por finalizar el bootcamp Soy Henry, donde me formé para
-          ser full stack web developer. 
+        <div>Educacion</div>
+        <div className={styles.infoAbout}>
+
         </div>
 
         <div className={styles.aboutRight}>
