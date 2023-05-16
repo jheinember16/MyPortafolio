@@ -11,7 +11,7 @@ function Home() {
         <Profile></Profile>        
         
       </div>
-      <div className={styles.homeLeft}>
+      <div className={styles.homeRight}>
         <div className={styles.titulo}>Hola! Soy Jheinember Jimenez</div>
         <div className={styles.subtitulo}>Full Stack Developer</div>
         <div className={styles.descripcion}>
