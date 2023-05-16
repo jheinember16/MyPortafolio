@@ -5,7 +5,7 @@ import Nav from "./Components/Nav";
 import About from "./Components/About"
 import Proyectos from "./Components/Proyectos"
 import Contacto from "./Components/Contacto";
-import Profile from "./Components/Profile";
+
 
 
 function App() {
@@ -29,7 +29,6 @@ function App() {
           <Contacto></Contacto>
         </section>
 
-        <Profile></Profile>
       </div>
     </>
   );
