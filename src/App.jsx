@@ -4,6 +4,8 @@ import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import About from "./Components/About"
 import Proyectos from "./Components/Proyectos"
+import Contacto from "./Components/Contacto";
+
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
 
         <section id="Proyectos">
           <Proyectos></Proyectos>
+        </section>
+
+        <section id="Contacto">
+          <Contacto></Contacto>
         </section>
       </div>
     </>
