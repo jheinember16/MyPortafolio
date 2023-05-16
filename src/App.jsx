@@ -5,6 +5,7 @@ import Nav from "./Components/Nav";
 import About from "./Components/About"
 import Proyectos from "./Components/Proyectos"
 import Contacto from "./Components/Contacto";
+import Profile from "./Components/Profile";
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
         <section id="Contacto">
           <Contacto></Contacto>
         </section>
+
+        <Profile></Profile>
       </div>
     </>
   );
