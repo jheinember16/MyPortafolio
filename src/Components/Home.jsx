@@ -1,32 +1,53 @@
 import React from "react";
 import styles from "../Styles/Home.module.css";
-//import profile from "../Styles/Images/profile.jpg";
+// import profile from "../Styles/Images/profile.jpg";
 import Profile from "../Components/Profile";
 import { RiLinkedinFill, RiGithubFill, RiDownload2Fill } from "react-icons/ri";
 import CV from "../Styles/Images/CV.pdf";
-
 
 function Home() {
   return (
     <div className={styles.homeContenedor}>
       <div className={styles.imageBorder}>
-        <Profile></Profile>        
-        
+        <Profile></Profile>
+        {/* <img src={profile} alt="profile pic" className={styles.profilePic} /> */}
       </div>
+
       <div className={styles.homeRight}>
-        <div className={styles.titulo}>Hola! Soy Jheinember Jimenez</div>
+        <div className={styles.hola}>¡Hola!</div>
+        <div className={styles.titulo}>Soy Lourdes López Pepa</div>
         <div className={styles.subtitulo}>Full Stack Developer</div>
         <div className={styles.descripcion}>
-          Full Stack Developer con formación universitaria, resolución de problemas, trabajo en equipo,
+          Full Stack Developer con formación como Diseñadora Gráfica. Con
+          pensamiento creativo, resolución de problemas, trabajo en equipo,
           comunicación y autonomía.
         </div>
-        <a href={CV} download className={styles.contCurriculum}>
-          <RiDownload2Fill className={styles.iconCv} />
-          Mi Curriculum
-        </a>
+
+        <div className={styles.contacto}>
+          <a
+            href={CV}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.contCurriculum}
+          >
+            <RiDownload2Fill className={styles.iconCv} />
+            Mi Curriculum
+          </a>
+
+          <a href="https://github.com/lupilp" target="_blank" rel="noreferrer">
+            <RiGithubFill className={styles.icono} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/lourdeslopezpepa/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiLinkedinFill className={styles.icono} />
+          </a>
+        </div>
       </div>
     </div>
-
   );
 }
 
